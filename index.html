@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="RENTAL CYCLE - いつでも、どこでも、レンタル自転車。 RENTAL CYCLEは、気軽に使え自転車シェアリングサービスです">
+    <meta name="description" content="Villa Azure ブルーベリーのお菓子の専門店">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <title>Villa Azure -Blueberry Sweets-</title>
@@ -13,48 +13,89 @@
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <meta property="og:type" content="blog">
-    <meta property="og:description" content="RENTAL CYCLE - いつでも、どこでも、レンタル自転車">
-    <meta property="og:title" content="RENTAL CYCLE">
-    <meta property="og:url" content="https://kshirakura.github.io/RENTAL_CYCLE/">
-    <meta property="og:image" content="https://kshirakura.github.io/RENTAL_CYCLE/ogp.png">
-    <meta property="og:site_name" content="RENTAL CYCLE">
+    <meta property="og:description" content="Villa Azure ブルーベリーのお菓子の専門店">
+    <meta property="og:title" content="Villa Azure">
+    <meta property="og:url" content="https://kshirakura.github.io/villa_azule/">
+    <meta property="og:image" content="https://kshirakura.github.io/villa_azule/ogp.png">
+    <meta property="og:site_name" content="Villa Azure">
     <meta property="og:locale" content="ja_JP" />
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'kmg6ajr',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
   </head>
   <body>
     <div class="all_container">
-
       <header class="header">
         <div class="header_container pc_flex sp_flex">
-          <div class="logo">
-            <img src="logo.svg" alt="logo">
+          <a href="">
+            <div class="logo">
+            <img src="img/villa_azule_logo.svg" alt="logo">
           </div>
-          <div class="main_navigation show_modal">
+          </a>
+          <div class="main_navigation menu-btn">
           </div>
-          <div class="icon fb_icon">
-            <img src="facebook.png" alt="facebook">
+          <div class="icons pc_flex sp_flex">
+            <a href="">
+              <div class="icon fb_icon">
+              <img src="img/sns/facebook.png" alt="facebook">
+            </div>
+            </a>
+            <a href="">
+              <div class="icon insta_icon">
+              <img src="img/sns/instagram.png" alt="instagram">
+            </div>
+            </a>
           </div>
-          <div class="icon insta_icon">
-            <img src="instagram.png" alt="instagram">
-          </div>
+          
         </div>
       </header>
 
       <main class="main">
-
+        <div class="modal">
+          <nav class="modal_menu">
+            <ul class="modal_menu_list">
+              <li><a href="#top" class="top-btn">TOP</a></li>
+              <li><a href="#facebook" class="scroll-btn">Facebook</a></li>
+              <li><a href="#philosophy" class="scroll-btn" >Philosophy</a></li>
+              <li><a href="#yui_sano" class="scroll-btn">Yui Sano</a></li>
+              <li><a href="#products" class="scroll-btn">Products</a></li>
+              <li><a href="#online_shop" class="scroll-btn">Online Shop</a></li>
+            </ul>
+          </nav>
+        </div>
         <div class="mainvisual">
           <div class="mainvisual_container">
-            <div class="logo l-center">
-              <img src="logo.svg" alt="logo">
+            <div class="slides_sp slide">
+              <img src="img/slide/slide1_sp.png">
+              <img src="img/slide/slide2_sp.png">
+              <img src="img/slide/slide3_sp.png">
+            </div>
+            <div class="slides_pc slide">
+              <img src="img/slide/slide1_pc.png">
+              <img src="img/slide/slide2_pc.png">
+              <img src="img/slide/slide3_pc.png">
+            </div>
+            <div class="sub_visual">
+              <div class="logo l-center">
+              <img src="img/villa_azule_logo.svg" alt="logo">
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="facebook l-margin-top">
-          <div class="facebook_container l-inner">
+        <div id="facebook"class="facebook l-margin-top">
+          <div class="facebook_container container l-inner pc_flex sp_flex">
             <h1 class="content_title l-vertical-right">Facebook</h1>
             <div class="article1 article">
               <div class="article_img">
-                <img src="article1" alt="article1">
+                <img src="img/facebook/article1.jpg" alt="article1">
               </div>
               <div class="article_textarea">
                 <h2 class="article_title">タイトル</h2>
@@ -66,7 +107,7 @@
             </div>
             <div class="article2 article">
               <div class="article_img">
-                <img src="article2" alt="article2">
+                <img src="img/facebook/article2.jpg" alt="article2">
               </div>
               <div class="article_textarea">
                 <h2 class="article_title">タイトル</h2>
@@ -76,9 +117,9 @@
                   美味しいスイーツです美味しいスイーツです</p>
               </div>
             </div>
-            <div class="article3 article">
+            <div class="article3 article sp_hide">
               <div class="article_img">
-                <img src="article3" alt="article3">
+                <img src="img/facebook/article3.jpg" alt="article3">
               </div>
               <div class="article_textarea">
                 <h2 class="article_title">タイトル</h2>
@@ -91,14 +132,14 @@
           </div>
         </div>
 
-        <div class="philosophy l-margin-top">
-          <div class="philosophy l-justify-left pc_flex">
-            <h1 class="content_title">Philosophy</h1>
+        <div id="philosophy" class="philosophy l-margin-top">
+          <div class="philosophy_container container l-justify-left pc_flex">
+            <h1 class="content_title l-vertical-right">Philosophy</h1>
             <div class="copy_area">
-              <h2 class="copy_jp">いい感じの言葉いい感じの言葉。</h2>
+              <h2 class="copy_jp">いい感じの言葉いい感じの言葉いい感じの言葉。</h2>
               <h2 class="copy_en">Something nice.</h2>
               <a href="">
-                <div class="more_info_btn">
+                <div class="more_info_btn water_btn">
                 <p>詳細はこちら</p>
               </div>
               </a>
@@ -120,22 +161,26 @@
           </div>
         </div>
 
-        <div class="yui_sano l-margin-top">
-          <div class="yui_sano_container l-justify-right">
+        <div id="yui_sano" class="yui_sano l-margin-top">
+          <div class="yui_sano_container container">
             <h1 class="content_title l-vertical-left">
               Yui Sano
             </h1>
-            <div class="name_area">
+            <div class="yui_sano_photo_area l-justify-right">
+              <div class="name_area">
               <h2 class="job">ブルーベリーの専門家</h2>
               <h3 class="name_jp">佐野 唯</h3>
               <h4 class="name_en">Yui Sano</h4>
             </div>
             <a href="">
-              <div class="more_info_btn">
+              <div class="more_info_btn white_btn">
               <p>詳細はこちら</p>
-            </div>
+              </div>
             </a>
-            <div class="media_content pc_flex">
+            </div>
+            
+
+            <div class="media_content pc_flex l-inner">
               <div class="text_area">
                 <p class="text">
                   いい感じの文章いいい感じの文章いい感じの文章
@@ -151,44 +196,50 @@
                 </p>
               </div>
               <div class="image">
-                <img src="yui_sano_sub" alt="sui_sano_sub">
+                <img src="img/yui_sano/yui_sano_sub.jpg" alt="sui_sano_sub">
               </div>
             </div>
           </div>
         </div>
 
-        <div class="product l-margin-top">
-          <div class="product_container l-inner pc_flex sp_flex">
-            <div class="box1 box">
+        <div id="products" class="products l-margin-top">
+          <div class="products_container container l-inner ">
+            <h1 class="content_title">
+              Products
+            </h1>
+            <div class="boxes pc_flex sp_flex">
+              <div class="box1 box">
               <div class="product_image">
-                <img src="product1" alt="product1">
+                <img src="img/products/product1.jpg" alt="product1">
               </div>
               <h2 class="product_title">Cakes</h2>
               <a href="">
-                <div class="more_info_btn">
+                <div class="more_info_btn white_btn little_btn">
                 <p>詳細はこちら</p>
               </div>
               </a>
             </div>
             <div class="box2 box">
               <div class="product_image">
-                <img src="product2" alt="product2">
+                <img src="img/products/product2.jpg" alt="product2">
               </div>
               <h2 class="product_title">Baked</h2>
               <a href="">
-                <div class="more_info_btn">
+                <div class="more_info_btn white_btn little_btn">
                 <p>詳細はこちら</p>
               </div>
               </a>
             </div>
+            </div>
+            
           </div>
         </div>
 
-        <div class="online_shop l-margin-top">
-          <div class="online_shop_container l-inner">
+        <div id="online_shop" class="online_shop l-margin-top">
+          <div class="online_shop_container container l-inner">
             <h1 class="content_title">Online Shop</h1>
             <a href="">
-              <div class="more_info_btn">
+              <div class="more_info_btn white_btn little_btn">
               <p>詳細はこちら</p>
             </div>
             </a>
@@ -198,26 +249,32 @@
 
       </main>
       <footer class="footer l-margin-top">
-        <div class="footer_container l-inner">
+        <div class="footer_container container l-inner">
           <div class="logo">
-            <img src="logo.svg" alt="logo">
+            <img src="img/villa_azule_logo_w.svg" alt="logo">
           </div>
-          <nav class="footer_nav">
-            <ul class="footer_menu_list">
-              <li><a href="">TOP</a></li>
-              <li><a href="">Facebook</a></li>
-              <li><a href="">Philosophy</a></li>
-              <li><a href="">Yui Sano</a></li>
-              <li><a href="">Product</a></li>
-              <li><a href="">Online Shop</a></li>
-            </ul>
-          </nav>
-          <div class="sns pc_flex sp_flex">
-            <div class="icon fb_icon">
-              <img src="facebook.png" alt="facebook">
-            </div>
-            <div class="icon insta_icon">
-              <img src="instagram.png" alt="instagram">
+          <div class="footer_nav_sns sp_flex pc_flex">
+            <nav class="footer_nav">
+              <ul class="footer_menu_list pc_flex">
+                <li><a href="#top" class="top-btn">TOP</a></li>
+                <li><a href="#facebook" class="scroll-btn">Facebook</a></li>
+                <li><a href="#philosophy" class="scroll-btn" >Philosophy</a></li>
+                <li><a href="#yui_sano" class="scroll-btn">Yui Sano</a></li>
+                <li><a href="#products" class="scroll-btn">Products</a></li>
+                <li><a href="#online_shop" class="scroll-btn">Online Shop</a></li>
+              </ul>
+            </nav>
+            <div class="sns pc_flex sp_flex">
+              <a href="">
+                <div class="icon fb_icon">
+                <img src="img/sns/facebook-w.png" alt="facebook">
+              </div>
+              </a>
+              <a href="">
+                <div class="icon insta_icon">
+                <img src="img/sns/instagram-w.png" alt="instagram">
+              </div>
+              </a>
             </div>
           </div>
           <p class="rights">

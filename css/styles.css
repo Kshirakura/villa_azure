@@ -1,7 +1,5 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
-
 /* モバイルファーストで書いてみます */
 
 /* ------------
@@ -14,41 +12,557 @@ html {
 }
 
 :root {
-  --blue: #0695FF;
+  --blue: #2b4157;
   --red: #B20D30;
-  --water: #BEE7E8;
+  --water: #d9f1fc;
   --yellow: #DACC3E;
 }
 
 body {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.15rem;
   margin:0;
   -webkit-text-size-adjust: 100%;
-  font-family: acme-gothic, vdl-logona,sans-serif;
-  line-height: 3rem;
+  font-family: meno-banner, fot-tsukumin-pr6n, serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.8;
+  background-color: var(--water);
+  color: var(--blue);
 }
 
 .container_all {
   width: 100%;
-  background: #fff;
   overflow:hidden;
-  color: #333;
-  /* font-family: 'Yomogi', cursive; */
 }
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--blue);
+}
+
+img {
+  width: 100%;
+}
+
+.sp_flex {
+  display: flex;
+}
+
+.l-inner {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.l-justify-right {
+  margin-left: auto;
+  width: 90%;
+}
+
+.l-justify-left {
+  margin-right: auto;
+  width: 90%;
+}
+
+
+.l-margin-top {
+  margin-top: 60px;
+}
+
+.container {
+  position: relative;
+}
+
+.content_title {
+  font-size: 2.4rem;
+}
+
+.l-vertical-right {
+  writing-mode: vertical-rl;
+  position: absolute;
+  right: -50px;
+  top: 100px;
+}
+
+
+.l-vertical-left {
+  writing-mode: vertical-rl;
+  position: absolute;
+  top: 100px;
+  left: calc(8% - 30px);
+}
+
+.icon {
+  width: 40px;
+  margin-right: 12px;
+}
+
+.more_info_btn {
+  border: solid 1px var(--blue);
+  border-radius: 3px;
+  width: 150px;
+  padding: 10px;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.water_btn {
+  background-color: var(--water);
+}
+
+.white_btn {
+  background-color: #fff;
+}
+
+.little_btn {
+  width: 100px;
+  font-size: 1.2rem;
+}
+
+/*--------
+ヘッダー 
+--------- */
+
+.header {
+  background: #fff;
+  height: 80px;
+  position: fixed;
+  width: 100vw;
+  z-index: 4;
+}
+
+.header_container {
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px 0;
+}
+
+.header .logo {
+  width: 120px;
+  margin-left: 10px;
+}
+
+.header .logo img {
+  padding-top: 10px;
+}
+
+.main_navigation {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main_navigation,
+.main_navigation:before,
+.main_navigation:after {
+  content: "";
+  background-color: var(--blue);
+  width: 30px;
+  height: 4px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.main_navigation:before,
+.main_navigation:after {
+  position: absolute;
+}
+
+.main_navigation:before {
+  top: 8px;
+}
+
+.main_navigation:after {
+  top: -8px;
+}
+
+.sp_hide {
+  display: none;
+}
+
+/*--------
+モーダル
+--------- */
+.modal {
+  display: none;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100vw;
+  height: 100vh;
+  padding: 100px;
+  font-size: 3rem;
+  z-index: 3;
+}
+
+
+/*--------
+メインビジュアル 
+--------- */
+
+.mainvisual {
+  padding-top: 80px;
+}
+
+.slides_pc {
+  display: none;
+}
+
+.slides_sp,
+.slides_sp img {
+  height: calc(100vh - 80px);
+}
+
+.slides_sp img {
+  object-fit: cover;
+}
+
+.sub_visual {
+  background-image: url(../img/sub_vusual.jpg);
+  height: 120px;
+}
+
+.sub_visual .logo{
+  width: 200px;
+  margin:0 auto;
+  padding-top: 30px;
+}
+
+/*--------
+facebook
+--------- */
+.facebook_container {
+  justify-content: space-between;
+}
+
+.article {
+  width: 48%;
+}
+
+.article_img,
+.article_img img {
+  height: 180px;
+}
+
+.article_img img {
+  object-fit: cover;
+}
+
+.article_textarea {
+  margin-top: 20px;
+  padding: 10px;
+  border: solid 1px var(--blue);
+  background-color: #fff;
+}
+
+.article_title {
+  border-bottom: solid 1px var(--blue);
+  margin: 10px 0;
+}
+
+/*--------
+philosophy
+--------- */
+.copy_area {
+  background: #fff;
+  padding: 50px 10%;
+  font-size: 1.1rem;
+}
+
+.copy_en {
+  font-size: 1.3rem;
+}
+
+.philosophy .text_area{
+  padding: 20px 10%;
+  background-color: var(--blue);
+  color: #fff;
+}
+
+/*--------
+yui_sano
+--------- */
+
+
+.yui_sano_photo_area {
+  background-image: url(../img/yui_sano/yui_sano.png);
+  height: 250px;
+  background-position: top right -90px;
+  background-size: cover;
+  padding-top: 20px;
+}
+
+.yui_sano .name_area{
+  background: #fff;
+  width: 180px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.yui_sano .job {
+  font-size: 1.4rem;
+}
+
+.yui_sano .name_jp {
+  font-size: 2.4rem;
+}
+
+.yui_sano .more_info_btn {
+  margin-left: 20px;
+}
+
+.yui_sano .text_area {
+  padding: 20px 10%;
+  background-color: #fff;
+}
+
+/*--------
+products
+--------- */
+
+.products .content_title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.boxes {
+  justify-content: space-between;
+}
+
+.box {
+  width: 47%;
+}
+
+.product_image img {
+  height: 180px;
+  object-fit: cover;
+}
+
+/*--------
+online shop
+--------- */
+
+.online_shop {
+  background-image: url("../img/online_shop.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 240px;
+  text-align: center;
+  padding-top: 40px;
+  color: #fff;
+  
+}
+
+.online_shop .content_title {
+  text-shadow:  3px 3px 5px #472846;
+}
+
+.online_shop .more_info_btn{
+  margin: 30px auto;
+} 
+
+/*--------
+フッター
+--------- */
+
+.footer {
+  background: var(--blue);
+}
+
+.footer_container {
+  padding-top: 60px;
+  color: #fff;
+}
+
+.footer_container .logo {
+  margin-bottom: 30px;
+}
+
+.footer_nav_sns {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer_container a {
+  color: #fff;
+}
+
+.footer_menu_list {
+  margin-bottom: 30px;
+} 
+
 
 
 
 
 
 @media (min-width: 768px) {
-
- 
   
+  .sp_hide {
+    display: block;
+  }
+
+  .slides_sp {
+    display: none;
+  }
+
+  .slides_pc {
+    display: block;
+  }
+
+  .slides_pc,
+  .slides_pc img {
+    height: calc(100vh - 80px);
+  }
+
+  .slides_pc img {
+    object-fit: cover;
+  }
+
+  .article {
+    width: 32%;
+  }
+
+  .yui_sano_photo_area {
+    background-position: top right;
+  }
+
+  .online_shop .content_title {
+    font-size: 5rem;
+  }
+
+  .little_btn {
+    width: 150px;
+    font-size: 1.4rem; 
+  } 
+
+  .footer .logo {
+    width: 200px;
+  }
+
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
+  .sp_flex {
+    display: block;
+  }
 
- 
+  .pc_flex {
+    display: flex;
+  }
 
+  .l-inner {
+    width: 1020px;
+  }
+
+  .l-justify-left{
+    width: calc(50vw + 503px);
+  }
+
+  .l-justify-right {
+    width: calc(50vw + 503px);
+  }
+
+  .l-vertical-right {
+    right:-5%;
+  }
+
+  .l-vertical-left {
+    left:calc(50vw - 590px);
+  }
+
+  .sub_visual {
+    background-size: cover;
+    height: 200px;
+  }
+
+  .sub_visual .logo {
+    width: 300px;
+    padding-top: 60px;
+  }
+
+  .copy_area {
+    width: 60%;
+    font-size: 2.4rem
+  }
+
+  .copy_area .copy_en {
+    font-size: 3rem;
+  }
+
+  .philosophy .text_area {
+    width: 40%;
+    padding: 30px;
+  }
+
+  .yui_sano_photo_area {
+    height: 400px;
+  }
+
+  .yui_sano .name_area {
+    width: 400px;
+    height: 250px;
+    padding: 30px;
+  }
+
+  .yui_sano .job {
+    font-size: 2.4rem;
+  }
+
+  .yui_sano .name_jp {
+    font-size: 6rem;
+  }
+
+  .yui_sano .name_en {
+    font-size: 3rem;
+  }
+
+  .yui_sano .text_area {
+    width: 60%;
+    padding: 30px;
+  }
+
+  .yui_sano .image {
+    width: 40%;
+    object-fit: cover;
+  }
+
+  .yui_sano .image img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .product_image,
+  .product_image img {
+    height: 400px;
+  }
+
+  .online_shop {
+    height: 400px;
+  }
+
+  .online_shop .content_title {
+    font-size: 9rem;
+    padding-top: 70px;
+  }
+
+  .footer_nav_sns {
+    align-items: center;
+  } 
+
+  .footer_menu_list {
+    margin-bottom: 0;
+  }
+
+  .footer_menu_list li {
+    margin-right: 30px;
+  }
+
+  .rights {
+    text-align: center;
+  }
 }
 
