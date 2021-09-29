@@ -94,7 +94,7 @@ img {
   writing-mode: vertical-rl;
   position: absolute;
   top: 100px;
-  left: calc(8% - 20px);
+  left: calc(8% - 25px);
 }
 
 .icon {
