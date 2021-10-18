@@ -86,7 +86,7 @@ img {
   writing-mode: vertical-rl;
   -ms-writing-mode:tb-rl;
   position: absolute;
-  right: -40px;
+  right: -36px;
   top: 100px;
 }
 
@@ -478,8 +478,12 @@ online shop
     right:-5%;
   }
 
+  .l-vertical-right2 {
+    right: -3.75%;
+  }
+
   .l-vertical-left {
-    left:calc(50vw - 590px);
+    left:calc(50vw - 570px);
   }
 
   .sub_visual {
